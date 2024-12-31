@@ -1,3 +1,53 @@
+Student Registration Form - Stepper Form
+
+Overview
+
+This project is a student registration form built using Next.js, designed as a stepper form for a smooth and structured user experience. The project adheres to modern development standards and best practices.
+
+Features
+
+Stepper Form: A multi-step registration form where only the relevant part is displayed at each step.
+
+Validation: Comprehensive validation applied to all form fields for a seamless user experience.
+
+Internationalization Ready: Includes an en.json file for text content, making the application easily translatable to other languages.
+
+BEM Styling: SCSS styles are implemented following the Block Element Modifier (BEM) methodology.
+
+Tech Stack
+
+Next.js: Framework for building server-rendered and static web applications.
+
+SCSS: Used for styling with a focus on modularity and reusability.
+
+Netlify: Hosting platform for quick deployment and scalability.
+
+Folder Structure
+
+Constants: Contains reusable constants.
+
+Atomic Structure: UI components are designed and implemented using the atomic design methodology.
+
+Utils: Includes utility functions like regex patterns for validation.
+
+Key Components
+
+Parent Component: Renders only the relevant part of the form at any given time, ensuring optimal performance and maintainability.
+
+Localization Support: Text strings are stored in en.json for easy modification and translation.
+
+Deployment
+
+The project is deployed and accessible via Netlify. To view the live demo, visit the hosted application link provided in the repository.
+
+Getting Started
+
+Prerequisites
+
+Node.js
+
+npm or yarn
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
