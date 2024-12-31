@@ -41,7 +41,7 @@ The project follows the **Atomic Design Principle** with the following organizat
 
 ## Deployment
 
-The project is deployed and accessible via Netlify. To view the live demo, visit the hosted application link provided in the repository.
+The project is deployed and accessible via Vercel. To view the live demo, visit the hosted application link provided in the repository.
 
 ## Getting Started
 
