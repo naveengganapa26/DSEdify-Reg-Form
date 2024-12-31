@@ -1,0 +1,68 @@
+@import "./_variable.scss";
+
+.submission-confirmation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  &__image-container {
+    width: 150px;
+    height: 150px;
+
+    @media (min-width: 600px) {
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: 960px) {
+      width: 250px;
+      height: 230px;
+    }
+  }
+
+  &__confetti-box {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__confetti-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__text-container {
+    width: 100%;
+  }
+
+  &__congratulations-text {
+    color: $orange_1;
+
+    &.fs-30.fw-700 {
+      @media (min-width: 600px) and (max-width: 959px) {
+        font-size: 2.375rem !important;
+      }
+
+      @media (min-width: 960px) {
+        font-size: 2.75rem !important;
+      }
+    }
+  }
+
+  &__success-text {
+    color: $blue_2;
+    white-space: nowrap;
+    margin-bottom: 0.5rem;
+
+    &.fs-24.fw-600 {
+      @media (min-width: 600px) and (max-width: 959px) {
+        font-size: 2rem !important;
+      }
+
+      @media (min-width: 960px) {
+        font-size: 2.3rem !important;
+      }
+    }
+  }
+}

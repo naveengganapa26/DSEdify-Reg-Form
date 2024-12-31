@@ -1,0 +1,296 @@
+@import "./_variable.scss";
+
+
+.layout-comp {
+  height: 100vh;
+  width: 100vw;
+
+  @media (min-width: 1024px) {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+  }
+
+  &__left-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+
+    @media (max-width: 1023px) {
+      display: none;
+    }
+
+    &__bgImg-box {
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      &__main-image {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        z-index: 0;
+      }
+
+      &__white-vector-box {
+        position: absolute;
+        right: -2px;
+        width: 20%;
+        z-index: 3;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+
+      &__white-vector-image {
+        height: 100vh;
+        object-fit: contain;
+      }
+
+      &__blue-vector-image {
+        height: 68%;
+        width: 25%;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+      }
+    }
+  }
+
+  &__right-section {
+    background-image: url("../assets/backgroundImage/backgroundimg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column !important;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 16px;
+
+    &__container {
+      flex-direction: column;
+      align-items: center;
+
+      &__counter-box {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      &__counter-text {
+        visibility: visible;
+
+        span {
+          color: $orange_1;
+        }
+
+        &.fs-20.fw-700 {
+          @media screen and (max-width: 600px) {
+            font-size: 0.8rem !important;
+          }
+
+          @media screen and (min-width: 601px) and (max-width: 960px) {
+            font-size: 1rem !important;
+          }
+
+          @media screen and (min-width: 961px) {
+            font-size: 1.2rem !important;
+          }
+        }
+        &.hidden {
+          visibility: hidden;
+        }
+      }
+
+      &__logo-box {
+        width: 35%;
+
+        @media screen and (max-width: 600px) {
+          width: 60%;
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 960px) {
+          width: 40%;
+        }
+      }
+
+      &__logo-image {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      &__form-title-box {
+        margin-top: 1rem !important;
+
+        &__label {
+          text-align: center;
+          color: $blue_2;
+
+          &.fs-32.fw-700 {
+            @media screen and (max-width: 600px) {
+              font-size: 1.4rem !important;
+            }
+          }
+        }
+
+        &__label-code {
+          text-align: center;
+          color: $blue_2;
+
+          &.fs-23.fw-700 {
+            @media screen and (max-width: 600px) {
+              font-size: 0.875rem !important;
+            }
+
+            @media screen and (min-width: 601px) and (max-width: 960px) {
+              font-size: 1.2rem !important;
+            }
+          }
+        }
+      }
+
+      &__form-components-box {
+        width: 80%;
+
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 960px) {
+          width: 80%;
+        }
+      }
+
+      &__btn__contact-form-btn {
+        margin-top: 2rem;
+
+        .getStartedBtn {
+          background: $blue_2;
+          border-radius: 36px;
+          height: 50px;
+
+          @media screen and (max-width: 600px) {
+            width: 150px;
+            font-size: 0.9375rem;
+          }
+
+          @media screen and (min-width: 601px) {
+            width: 200px;
+            font-size: 1.25rem;
+          }
+
+          &.Mui-disabled {
+            background-color: $grey_1;
+            color: $white_1;
+            cursor: not-allowed;
+          }
+        }
+      }
+
+      &__btn-box {
+        margin-top: 1rem;
+        padding: 0 8px;
+        text-align: left;
+        height: 100%;
+        width: 80%;
+
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 960px) {
+          width: 80%;
+        }
+      }
+
+      &__btn-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      &__back-btn {
+        border-radius: 36px !important;
+        text-transform: none;
+        border: 1px solid $blue_2;
+        color: $blue_2 !important;
+        background-color: transparent !important;
+        height: 30px !important;
+
+        &.fs-15.fw-700 {
+          @media screen and (min-width: 768px) {
+            height: 40px !important;
+            font-size: 1.5rem !important;
+          }
+        }
+
+        &:hover {
+          background-color: $blue_2;
+        }
+
+        .MuiSvgIcon-root {
+          font-size: 1.5rem;
+          color: $blue_2;
+        }
+      }
+
+      &__continue-btn {
+        border-radius: 36px !important;
+        text-transform: none !important;
+        color: $white_1 !important;
+        background-color: $blue_2 !important;
+        width: 100px !important;
+        height: 30px !important;
+
+        &.fs-15.fw-700 {
+          @media screen and (min-width: 768px) {
+            width: 150px !important;
+            height: 40px !important;
+            font-size: 1.25rem !important;
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:disabled {
+          cursor: not-allowed;
+        }
+      }
+
+      &__submission-btn {
+        border-radius: 36px !important;
+        text-transform: none !important;
+        color: $white_1 !important;
+        background-color: $blue_2 !important;
+        width: 165px !important;
+        height: 35px !important;
+
+        &.fs-15.fw-700 {
+          @media screen and (min-width: 768px) {
+            width: 220px !important;
+            height: 45px !important;
+            font-size: 1.25rem !important;
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:disabled {
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}

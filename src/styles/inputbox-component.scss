@@ -1,0 +1,72 @@
+@import "./_variable.scss";
+
+.input-box {
+  margin-bottom: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+
+  &__text-field {
+    input::placeholder {
+      font-size: 0.875rem !important;
+    }
+  }
+
+  &__label {
+    font-size: 0.875rem !important;
+    font-weight: 600 !important;
+    color: $blue_2;
+
+    &--disabled {
+      color: $grey_1;
+    }
+
+    &--required {
+      color: $red1;
+    }
+
+    &__sub-text {
+      font-size: 0.75rem !important;
+      margin-left: 0.25rem !important;
+    }
+  }
+
+  &__text-field {
+    & .MuiOutlinedInput-root {
+      & > fieldset {
+        border-color: $grey_1;
+        border-radius: 6px;
+      }
+
+      &:hover > fieldset {
+        border-color: $blue_1;
+      }
+
+      &:focus-within > fieldset {
+        outline: none;
+        border-color: $blue_1;
+      }
+    }
+
+    &--file {
+      .MuiOutlinedInput-root > fieldset {
+        min-height: 50px !important;
+      }
+    }
+
+    &__icon-divider {
+      background: $grey_1;
+      width: 1.2px !important;
+    }
+
+    &__icon-button {
+      .MuiSvgIcon-root {
+        fill: $grey_1;
+      }
+    }
+  }
+
+  &__error-text {
+    font-weight: 500 !important;
+    color: $red1;
+  }
+}

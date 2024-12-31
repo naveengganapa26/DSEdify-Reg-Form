@@ -1,0 +1,57 @@
+@import "./_variable.scss";
+
+.contact-form {
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: left;
+  }
+   
+  &__row {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    @media (max-width: 600px) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__altrow {
+    align-items: center;
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 0 20px;
+    .MuiButton-root {
+      font-size: 0.8rem;
+      height: 40px;
+      min-width: 120px;
+      padding: 0 1.5rem;
+      text-transform: capitalize !important;
+
+      &.Mui-disabled {
+        color: $white_1;
+        background-color: $green_1;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 0.6rem;
+        min-width: 86px;
+        padding: 0;
+      }
+    }
+  }
+
+  &__button-comp {
+    width: 100% !important;
+  }
+}

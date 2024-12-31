@@ -1,0 +1,38 @@
+@import "./_variable.scss";
+
+.button-component {
+  padding: 0.5rem 1rem !important;
+  text-transform: capitalize !important;
+  border-radius: 4px;
+
+  &.button-disabled {
+    background-color: $grey_1;
+    color: $white_1;
+    cursor: not-allowed;
+  }
+
+  &.button-contained {
+    background-color: $blue_1;
+    color: $white_1;
+    &:hover {
+      background-color: darken($blue_2, 10%);
+    }
+  }
+
+  &.button-outlined {
+    border: 1px solid $blue_1;
+    color: $blue_1;
+    background-color: transparent;
+    &:hover {
+      background-color: $blue_2(0, 123, 255, 0.1);
+    }
+  }
+
+  &.button-text {
+    color: $blue_1;
+    background-color: transparent;
+    &:hover {
+      background-color: $blue_2(0, 123, 255, 0.1);
+    }
+  }
+}

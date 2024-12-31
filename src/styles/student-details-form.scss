@@ -1,0 +1,98 @@
+@import "./_variable.scss";
+
+.student-details-form {
+  &__drag-drop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  &__dropzone {
+    position: relative;
+    height: 90px;
+    width: 90px;
+    cursor: pointer;
+
+    &--disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  &__background-ellipse-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__drop-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__drop-image {
+    width: 80px;
+    object-fit: contain;
+  }
+
+  &__image-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__uploaded-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__delete-button {
+    position: absolute;
+    top: 80%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__delete-icon {
+    background-color: $white_1;
+    color: $red1;
+    border-radius: 50%;
+  }
+
+  &__error {
+    color: $red1;
+  }
+
+  &__input-container {
+    overflow-y: auto;
+    height: 39.5vh;
+    padding: 0 4px 0 8px;
+    white-space: nowrap;
+
+    &--checkbox-label {
+      white-space: nowrap;
+      color: $blue_2;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px $grey_1;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $grey_1;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 600px) {
+      height: 48vh;
+    }
+  }
+}

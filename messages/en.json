@@ -1,0 +1,132 @@
+{
+  "_ValidationMessage_": {
+    "_FieldRequired_": "This field is required",
+    "_Numbers_": "Please enter a valid number",
+    "_Email_": "Please enter a valid email",
+    "_AlphaNumericMin3_": "Min 3 alphanumeric characters should be entered",
+    "_Usn_": "USN must be atleast 5 characters long ",
+    "_City_": "Please enter valid city",
+    "_ValidPercentage_": "Percentage must be a valid number between 0 and 100",
+    "_DecimalDigits_": "Only decimal with 2 digits after the point allowed",
+
+    "_SelectDegreeSpecialization_": "Please select a Degree Specialization.",
+    "_SelectBranch_": "Please select a Branch.",
+    "_SelectGradingSystem_": "Please select a Grading System.",
+    "_InvalidPercentage_": "Percentage must be between 1 and 100.",
+    "_InvalidCGPA_": "CGPA must be between 1 and 10.",
+    "_InvalidDecimalPlaces_": "Must have at most two decimal places."
+  },
+
+  "_LayoutComp_": {
+    "_FieldIdentifiers_": {
+      "_StudentRegistrationForm_": "Student Registration Form",
+      "_DriveCode_": "Drive Code",
+      "_DriveCodeNum_": "ABC123",
+      "_Step_": "Step",
+      "_Back_": "Back",
+      "_Continue_": "Continue",
+      "_GetStarted_": "Get started",
+      "_BackToHome_": "Back To Home",
+      "_PageNum_": 3
+    },
+
+    "_Images_": {
+      "_SuccessImageAlt_": "Success Image",
+      "_DesignImageAlt_": "Design Image",
+      "_LogoImage_": "Logo Image"
+    }
+  },
+
+  "_ContactForm_": {
+    "_PhoneNumLabel_": "Enter Phone Number",
+    "_PhoneNumBtnLabel_": "Verify Number",
+
+    "_EmailLabel_": "Enter Email Address ",
+    "_EmailBtnLabel_": "Verify Email",
+
+    "_VerfiyBtnLabel_": "Verified"
+  },
+
+  "_StudentDetailsForm_": {
+    "_CheckboxLabel_": "Same as the primary number",
+
+    "_FieldIdentifiers_": {
+      "_FullName_": "Full Name",
+      "_WhatsAppNumber_": "WhatsApp Number",
+      "_USN_": "USN",
+      "_City_": "Permanent City",
+      "_SchoolPercentage_": "10th Percentage",
+      "_PucPercentage_": "PUC / Diploma Percentage"
+    },
+
+    "_FieldPlaceholders_": {
+      "_PhFullName_": "Enter your full name",
+      "_PhWhatsAppNumber_": "Enter your WhatsApp number",
+      "_PhUSN_": "Enter your USN",
+      "_PhCity_": "Enter your permanent city",
+      "_PhSchoolPercentage_": "Enter your 10th percentage",
+      "_PhPucPercentage_": "Enter your PUC/Diploma percentage"
+    },
+
+    "_Dropzone_": {
+      "_BackgroundAltText_": "Background image",
+      "_DropIconAltText_": "Drop icon image",
+      "_UploadedAltText_": "Photograph"
+    }
+  },
+
+  "_AcademicInfoForm_": {
+    "_FieldIdentifiers_": {
+      "_AddDegreeButton_": "Add Degree",
+      "_DegreeSpecialization_": "Degree Specialization",
+      "_Branch_": "Branch",
+      "_GradingSystem_": "Grading System",
+      "_DegreePercentage_": "Degree Percentage",
+      "_AnyEarlierBacklogs_": "Any Earlier Backlogs",
+      "_AnyPresentBacklogs_": "Any Present Backlogs"
+    },
+    "_Placeholders_": {
+      "_EnterPercentageOrCGPA_": "Enter percentage or CGPA"
+    },
+
+    "_ButtonLabels_": {
+      "_DeleteDegree_": "Delete Degree"
+    },
+    "_Options_": {
+      "_Degrees_": {
+        "_SelectDegree_": "--SELECT--",
+        "_BCOM_": "Bachelor of Commerce",
+        "_BE_": "Bachelor of Engineering",
+        "_BBA_": "Bachelor of Business Administration",
+        "_MCOM_": "Master of Commerce",
+        "_MTECH_": "Master of Engineering",
+        "_MBA_": "Master of Business Administration"
+      },
+      "_Branches_": {
+        "_FA_": "Financial Accounting",
+        "_IA_": "Investment Analysis",
+        "_DM_": "Digital Marketing",
+        "_CS_": "Computer Science",
+        "_IT_": "Information Technology",
+        "_ECE_": "Electrical and Electronics",
+        "_HR_": "Human Resources",
+        "_ES_": "Entrepreneurship",
+        "_OP_": "Operations Management"
+      },
+      "_GradingSystems_": {
+        "_CGPA_": "CGPA",
+        "_PT_": "Percentage"
+      }
+    }
+  },
+
+  "_SubmissionConfirmation_": {
+    "_FieldIdentifiers_": {
+      "_Congratulations_": "Congratulations",
+      "_RegistrationSuccessful_": "Registration Successful"
+    },
+    "_Images_": {
+      "_ConfettiImageAlt_": "celebration"
+    }
+  }
+}

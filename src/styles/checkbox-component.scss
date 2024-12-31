@@ -1,0 +1,15 @@
+@import "./_variable.scss";
+
+.Checkbox-comp {
+  &__label {
+    font-weight: 700;
+    font-size: 0.875rem;
+  }
+
+  &--checkbox-label {
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    white-space: nowrap;
+    color: $blue_2;
+  }
+}
